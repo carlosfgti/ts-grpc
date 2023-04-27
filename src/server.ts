@@ -22,6 +22,7 @@ const handlers: ChatServiceHandlers = {
       },
       createdAt: new Date().toISOString(),
     });
+    console.log('request received')
   },
   ChatStream: (call) => {
     const randomNumbers = Array.from({ length: 20 }, () =>
