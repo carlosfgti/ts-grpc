@@ -5,6 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "server": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+    "grpc-types": "rm -rf ./src/rpc && proto-loader-gen-types --longs=String --enums=String --defaults --oneofs --grpcLib=@grpc/grpc-js --outDir=./src/rpc ./src/*.proto",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
